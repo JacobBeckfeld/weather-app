@@ -31,9 +31,16 @@ $(document).ready(function(){
         console.log(this)
     }
 
+    var weatherUrl = "api.openweathermap.org/data/2.5/forecast?q=";
+    var  timeConvert = "&units-imperial";
+    var appID = "&appid=";
+    var apiKey = "a2198b8b1a95c35dfd7fa87eadfe55b1";
+
     
 
 })
+
+
 
 
 
