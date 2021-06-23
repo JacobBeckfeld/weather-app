@@ -6,7 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
 </head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="develop/style.css">
 <body>
-    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!--make a header called weather dashboard and style in css-->
+    <header class="dashboard">Weather Dashboard</header>
+
+    <div class="container">
+        <div class="row"
+<!-- first create a card with bootstrap that will house your text search and search button-->
+            <div class="card col-4" id="weatherSearch">
+                <div class="card-body">
+                    <h5 class="card-title">Search city</h5>
+                    <input class="search" placeholder="City name">
+                    <button id="search-btn" class="btn btn-primary">search</button>
+                    <!--create a div with an id that will house your previous city searches-->
+                    <div class="searched"></div>
+                </div>
+            </div>
+            <div class= "card col-8" id="cityWeather">
+                <header class= "cityHeader"></header>
+                <i id="icon"></i>
+                <ul id="conditions">
+                    <li id="temp"></li>
+                    <li id="humidity"></li>
+                    <li id="windspeed"></li>
+                    <li id="uv"></li>
+                </ul>
+            </div>
+    </div>
+
+<!--make a card that will house your current day weather-->
+
+<!--make another 5 day forcast card that will house multiple forcast cards-->
+
+    <div class="row">
+        <h5 class="card-title" id="forcast-head">Future forcast</h5>
+        <div class="row" id="future-forcast"></div>
+    </div>
+
+
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js' integrity='sha256-H9jAz//QLkDOy/nzE9G4aYijQtkLt9FvGmdUTwBk6gs=' crossorigin='anonymous'></script>
+    <script src="./develop/script.js"></script>
 </body>
 </html>
