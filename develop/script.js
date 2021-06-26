@@ -29,14 +29,11 @@ function currentWeather(cityName) {
         temp.innerHTML = "Temperature: " + k2f(response.data.main.temp) + "&#176F";
         humidity.innerHTML = "Humidity: " + response.data.main.humidity + "%";
         windSpeed.innerHTML = "Wind Speed:" + response.data.wind.speed + " MPH";
-        var latatude = response.data.coord.lat;
-        var longitude = response.data.coord.lon;
-        var UVURL = "https://api.openweathermap.org/data/2.5/uvi/forecast?lat=" + latatude + "&lon=" + longitude + "&appid+" + APIKey + "&cnt=1";
-
-    })
+        }
+    )
     
     
 }
-    currentWeather("seattle");
+currentWeather("seattle");
 }
 
