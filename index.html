@@ -27,11 +27,10 @@
             <div class= "card col-8" id="cityWeather">
                 <h1 id="city"></h1>
                 <img id="icon"></img>
-                <ul id="conditions">
+                <ul style="list-style-type: none;" id="conditions">
                     <li id="temp"></li>
                     <li id="humidity"></li>
                     <li id="windspeed"></li>
-                    <li id="uv"></li>
                 </ul>
             </div>
         </div>
@@ -41,39 +40,40 @@
 <!--make another 5 day forcast card that will house multiple forcast cards-->
 
     <div class="row">
-        <h5 class="card-title" id="forcast-head">Future forcast:</h5>
-        <div class="col-2 future-forcast1">
+        <h5 class="card-title" id="forcast-head">Future forecast:</h5>
+        <div class="col-2 bg-primary m-1 future-forcast1">
             <p id= "day1"></p>
-            <p>Temp: <span id= "tempOne"></span></p>
-            <p>Humidity: <span id="humOne"></span></p>
-            <p>Windspeed: <span id="speedOne"></span></p>
+            <p><span id= "tempOne"></span></p>
+            <p><span id="humOne"></span></p>
+            <p><span id="speedOne"></span></p>
         </div>
-        <div class="col-2 future-forcast1">
+        <div class="col-2 bg-primary m-1 future-forcast1">
             <p id= "day2"></p>
-            <p>Temp: <span id= "tempTwo"></span></p>
-            <p>Humidity: <span id="humTwo"></span></p>
-            <p>Windspeed: <span id="speedTwo"></span></p>
+            <p><span id= "tempTwo"></span></p>
+            <p><span id="humTwo"></span></p>
+            <p><span id="speedTwo"></span></p>
         </div>
-        <div class="col-2 future-forcast1">
+        <div class="col-2 bg-primary m-1 future-forcast1">
             <p id= "day3"></p>
-            <p>Temp: <span id= "tempThree"></span></p>
-            <p>Humidity: <span id="humThree"></span></p>
-            <p>Windspeed: <span id="speedThree"></span></p>
+            <p><span id= "tempThree"></span></p>
+            <p><span id="humThree"></span></p>
+            <p><span id="speedThree"></span></p>
         </div>
-        <div class="col-2 future-forcast1">
+        <div class="col-2 bg-primary m-1 future-forcast1">
             <p id= "day4"></p>
-            <p>Temp: <span id= "tempFour"></span></p>
-            <p>Humidity: <span id="humFour"></span></p>
-            <p>Windspeed: <span id="speedFour"></span></p>
+            <p><span id= "tempFour"></span></p>
+            <p><span id="humFour"></span></p>
+            <p><span id="speedFour"></span></p>
         </div>
-        <div class="col-2 future-forcast1">
+        <div class="col-2 bg-primary m-1 future-forcast1">
             <p id= "day5"></p>
-            <p>Temp: <span id= "tempFive"></span></p>
-            <p>Humidity: <span id="humFive"></span></p>
-            <p>Windspeed: <span id="speedFive"></span></p>
+            <p><span id= "tempFive"></span></p>
+            <p><span id="humFive"></span></p>
+            <p><span id="speedFive"></span></p>
         </div>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./develop/script.js"></script>
 </body>
 </html>
