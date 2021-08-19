@@ -9,26 +9,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="develop/style.css">
 <body>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
     <!--make a header called weather dashboard and style in css-->
     <header class="dashboard">Weather Dashboard</header>
 
     <div class="container">
         <div class="row"
-<!-- first create a card with bootstrap that will house your text search and search button-->
+    <!-- first create a card with bootstrap that will house your text search and search button-->
             <div class="card col-4" id="weatherSearch">
                 <div class="card-body">
                     <h5 class="card-title">Search city</h5>
-                    <input class="search" placeholder="City name">
+                    <input class="search" placeholder="City name" id="user-input">
                     <button id="search-btn" class="btn btn-primary">search</button>
-                    <!--create a div with an id that will house your previous city searches-->
                     <div class="searched"></div>
                 </div>
             </div>
+            <!--make a card that will house your current day weather-->
             <div class= "card col-8" id="cityWeather">
-                <header class= "cityHeader"></header>
-                <i id="icon"></i>
+                <h1 id="city"></h1>
+                <img id="icon"></img>
                 <ul id="conditions">
                     <li id="temp"></li>
                     <li id="humidity"></li>
@@ -36,22 +34,46 @@
                     <li id="uv"></li>
                 </ul>
             </div>
-    </div>
-
-<!--make a card that will house your current day weather-->
+        </div>
+        
+        <!--create a div with an id that will house your previous city searches-->
 
 <!--make another 5 day forcast card that will house multiple forcast cards-->
 
     <div class="row">
-        <h5 class="card-title" id="forcast-head">Future forcast</h5>
-        <div class="row" id="future-forcast"></div>
+        <h5 class="card-title" id="forcast-head">Future forcast:</h5>
+        <div class="col-2 future-forcast1">
+            <p id= "day1"></p>
+            <p>Temp: <span id= "tempOne"></span></p>
+            <p>Humidity: <span id="humOne"></span></p>
+            <p>Windspeed: <span id="speedOne"></span></p>
+        </div>
+        <div class="col-2 future-forcast1">
+            <p id= "day2"></p>
+            <p>Temp: <span id= "tempTwo"></span></p>
+            <p>Humidity: <span id="humTwo"></span></p>
+            <p>Windspeed: <span id="speedTwo"></span></p>
+        </div>
+        <div class="col-2 future-forcast1">
+            <p id= "day3"></p>
+            <p>Temp: <span id= "tempThree"></span></p>
+            <p>Humidity: <span id="humThree"></span></p>
+            <p>Windspeed: <span id="speedThree"></span></p>
+        </div>
+        <div class="col-2 future-forcast1">
+            <p id= "day4"></p>
+            <p>Temp: <span id= "tempFour"></span></p>
+            <p>Humidity: <span id="humFour"></span></p>
+            <p>Windspeed: <span id="speedFour"></span></p>
+        </div>
+        <div class="col-2 future-forcast1">
+            <p id= "day5"></p>
+            <p>Temp: <span id= "tempFive"></span></p>
+            <p>Humidity: <span id="humFive"></span></p>
+            <p>Windspeed: <span id="speedFive"></span></p>
+        </div>
     </div>
 
-
-
-
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js' integrity='sha256-H9jAz//QLkDOy/nzE9G4aYijQtkLt9FvGmdUTwBk6gs=' crossorigin='anonymous'></script>
     <script src="./develop/script.js"></script>
 </body>
 </html>
